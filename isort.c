@@ -2,12 +2,9 @@
 #include "isort.h"
 
 void shift_element(int* arr, int i){
-    //int *tmp;
     for(int j=i; j>0; j--){
         *(arr+j) = *(arr+(j-1));
     }
-    //arr = tmp;
-
 }
 
 void insertion_sort(int* arr, int len){
