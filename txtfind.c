@@ -4,6 +4,7 @@
 #define LINE 256
 #define WORD 30
 
+//The function gets a string and saves it. The function returns the number of characters per line.
 int getLine(char s[]){
     int count = 0;
     char ch = getchar();
@@ -18,6 +19,7 @@ int getLine(char s[]){
     else return count;
 }
 
+//The function gets a string and saves it. The function returns the number of characters in the word.
 int getWord(char w[]){
     int count = 0;
     char ch = getchar();
@@ -32,6 +34,7 @@ int getWord(char w[]){
     return count;
 }
 
+//The function gets two strings and checks if the second string is contained in the first one.
 int subString(char *str1, char *str2){
 
     int counter = 0;
@@ -54,6 +57,7 @@ int subString(char *str1, char *str2){
     else return 1;     
 }
 
+//The function gets two strings and a n number. The function will check if the second string is equals to the first string,less the number of characters we have received in n.
 int similar(char *s, char *t, int n){
 
     int i=0,j=0;
@@ -72,6 +76,7 @@ int similar(char *s, char *t, int n){
     
     else return 0;
 }
+//The function gets a string, captures the lines of text, and prints the lines in which the desired word appears.
 
 void print_lines(char *str){
 
@@ -85,6 +90,9 @@ void print_lines(char *str){
         }
     }
 }
+
+//The function gets a string for searching, captures the text words and prints the words similar to the string.
+
 void print_similar_words(char *str){
 
     char word [WORD];

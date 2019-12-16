@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include "isort.h"
 
+//The function gets a pointer to the array and a number i, the function moves i numbers one place to the right.
+
 void shift_element(int* arr, int i){
     for(int j=i; j>0; j--){
         *(arr+j) = *(arr+(j-1));
     }
 }
-
+//insertion sort function that gets 50 numbers.
 void insertion_sort(int* arr, int len){
     for(int i=0; i<len; i++){
         int min, minIndex;
