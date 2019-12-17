@@ -9,7 +9,7 @@ int arr [LENGTH] = {0};
     for(int i=0; i<LENGTH; i++)
         scanf(" %d", (arr+i));
 
-    //Print the sort array.
+    //Print the sorted array.
     insertion_sort(arr, LENGTH);
     for(int j=0; j<LENGTH-1; j++)
         printf("%d,", *(arr+j));
